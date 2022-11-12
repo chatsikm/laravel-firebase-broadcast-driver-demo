@@ -22,11 +22,10 @@ class FSDB extends Broadcaster
      */
     public function __construct($config)
     {
-        $sr_account   = ServiceAccount::fromJsonFile(base_path($config['creds_file']));
+        $factory = (new Factory)->withServiceAccount($config['creds_file']);
+        
         $this->config = $config;
-        $this->db     = (new Factory())
-                        ->withServiceAccount($sr_account)
-                        ->createFirestore();
+        $this->db     = $factory->createDatabase();
     }
 
     /**
