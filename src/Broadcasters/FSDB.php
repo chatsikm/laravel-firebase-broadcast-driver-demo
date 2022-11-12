@@ -22,7 +22,7 @@ class FSDB extends Broadcaster
      */
     public function __construct($config)
     {
-        $factory = (new Factory)->withServiceAccount($config['creds_file']);
+        $factory = (new \Kreait\Firebase\Factory)->withServiceAccount($config['creds_file']);
         
         $this->config = $config;
         $this->db     = $factory->createDatabase();
