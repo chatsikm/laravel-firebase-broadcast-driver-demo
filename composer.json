@@ -1,18 +1,18 @@
 {
-    "name": "ctf0/firebase-broadcast-driver",
-    "description": "a firebase broadcast driver for laravel",
-    "homepage": "https://github.com/ctf0/laravel-firebase-broadcast-driver",
+    "name": "chatsikm/firebase-broadcast-driver-demo",
+    "description": "a firebase broadcast driver demo for laravel",
+    "homepage": "https://github.com/chatsikm/laravel-firebase-broadcast-driver-demo",
     "license": "MIT",
     "keywords": [
-        "ctf0",
+        "chatsikm",
         "laravel",
         "firebase",
         "broadcast"
     ],
     "authors": [
         {
-            "name": "Muah",
-            "email": "muah003@gmail.com"
+            "name": "Chatsikm",
+            "email": "chatsm@gmail.com"
         }
     ],
     "require": {
